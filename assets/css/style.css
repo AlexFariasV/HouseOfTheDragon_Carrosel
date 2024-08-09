@@ -3,13 +3,110 @@
     font-family: 'GameOfThrones';
     src: url('../../fonts/GOT.ttf') format('truetype');
 }
+
 /* ---------------------------- */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
-     /* font-family: "Poppins"; */
+
+
+body {
+    font-family: "Poppins";
     /* font-family: 'GameOfThrones', sans-serif; */
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.carrosel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.informacoes {
+    display: none;
+}
+
+.informacoes.ativa {
+    display: block;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 100vh;
+    color: #fff;
+}
+
+.informacoes h1 {
+    font-size: 35px;
+    margin-bottom: 80px;
+    font-family: 'GameOfThrones';
+}
+
+.informacoes .descricao {
+    width: 49%;
+    font-size: 24px;
+    line-height: 40px;
+    overflow: auto;
+    padding-right: 15px;
+}
+
+.botoes-carrosel {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.botoes-carrosel .button {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    border-color: #fff
+}
+
+.botoes-carrosel .button.selecionado {
+    background-color: green;
+}
+
+img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    /* Para ajustar o tamanho da tela */
+    display: none;
+}
+
+.img.ativa {
+    display: block;
+    animation: MudarImage 0.7s;
+}
+
+@keyframes MudarImage {
+    from {
+        opacity: 0.85;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+main:after {
+    content: "123";
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(120deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+    z-index: -1;
 }
