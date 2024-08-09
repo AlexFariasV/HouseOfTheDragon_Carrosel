@@ -1,9 +1,15 @@
-*{
+/* ------------import Font-------*/
+@font-face {
+    font-family: 'GameOfThrones';
+    src: url('../../fonts/GOT.ttf') format('truetype');
+}
+/* ---------------------------- */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 body{
-    background-color: red;
+     /* font-family: "Poppins"; */
+    /* font-family: 'GameOfThrones', sans-serif; */
 }
