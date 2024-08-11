@@ -2,13 +2,13 @@ const button = document.querySelectorAll('.button');
 const img = document.querySelectorAll('.img');
 const informacoes = document.querySelectorAll('.informacoes');
 
-button.forEach((button, indice) => {//ForEach => para cada button acontce algo 
+button.forEach((button, indice) => {
     button.addEventListener('click', () => {
         removeButton();
         button.classList.add("selecionado")
 
         removeImg();
-        img[indice].classList.add("ativa")//indice consigo pegar a posição
+        img[indice].classList.add("ativa")
 
         removeInformacoes();
         informacoes[indice].classList.add("ativa")
