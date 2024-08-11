@@ -7,12 +7,12 @@ button.forEach((button, indice) => {//ForEach => para cada button acontce algo
         removeButton();
         button.classList.add("selecionado")
 
-        removeImg();   
+        removeImg();
         img[indice].classList.add("ativa")//indice consigo pegar a posição
 
-        removeInformacoes();   
+        removeInformacoes();
         informacoes[indice].classList.add("ativa")
-        
+
     })
 });
 
