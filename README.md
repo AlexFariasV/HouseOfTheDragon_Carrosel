@@ -1,5 +1,7 @@
 # House Of The Dragon - Carrosel
 
+![Captura de tela 2024-08-17 225311](https://github.com/user-attachments/assets/ed8f9bcf-d56e-42a8-bfd9-1b186c397eb6)
+
 Bem-vindo ao projeto **House Of The Dragon - Carrosel**! Este é um carrossel de imagens dos dragões da série "House of the Dragon", desenvolvido durante o evento "Semana do Zero ao Programador Contratado" do Dev em Dobro.
 
 ## Visão Geral
